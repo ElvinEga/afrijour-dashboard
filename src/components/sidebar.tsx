@@ -46,7 +46,10 @@ export default function Sidebar({
           sticky
           className='z-50 flex justify-between px-4 py-3 shadow-sm md:px-4'
         >
-          <div className={`flex items-center ${!isCollapsed ? 'gap-2' : ''}`}>
+          <a
+            href='https://afrijour-landing.vercel.app/'
+            className={`flex items-center ${!isCollapsed ? 'gap-2' : ''}`}
+          >
             <img
               src='https://afrijour-one.vercel.app/assets/logo-CdzDCfd8.png'
               alt='Afrijour Logo'
@@ -57,7 +60,7 @@ export default function Sidebar({
             >
               <span className='font-medium'>Afrijour</span>
             </div>
-          </div>
+          </a>
 
           {/* Toggle Button in mobile */}
           <Button
