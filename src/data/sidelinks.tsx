@@ -18,6 +18,7 @@ import {
   IconNews,
   IconList,
   IconDatabase,
+  IconHome,
 } from '@tabler/icons-react'
 
 export interface NavLink {
@@ -33,9 +34,15 @@ export interface SideLink extends NavLink {
 
 export const sidelinks: SideLink[] = [
   {
-    title: 'Dashboard',
+    title: 'Home',
     label: '',
     href: '/',
+    icon: <IconHome size={18} />,
+  },
+  {
+    title: 'Dashboard',
+    label: '',
+    href: '/dashboard',
     icon: <IconLayoutDashboard size={18} />,
   },
   // {
